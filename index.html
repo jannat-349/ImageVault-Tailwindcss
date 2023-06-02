@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Image Vault</title>
+</head>
+
+<body class="text-textColor bg-bodyColor">
+    <nav
+        class="h-52 bg-topNavColor fixed top-0 left-0 w-screen py-2 px-5 md:h-24 md:flex gap-5 justify-between items-start">
+        <div class="w-60 mb-5">
+            <img src="./assets/image_vault-pic.png" alt="">
+        </div>
+        <div class="w-72 flex flex-col md:w-auto">
+            <div class="bg-textColor text-bodyColor flex items-center justify-between px-3 rounded-sm">
+                <span class=" material-symbols-outlined">
+                    search
+                </span>
+
+                <input type="text" placeholder="Search files..." autocomplete="off" class="px-3 py-2">
+                <span class="ml-5 mr-3 md:border-e-2 border-grayColor material-symbols-outlined">
+                    close
+                </span>
+                <p class="invisible md:visible font-semibold">45101 File(s)</p>
+                <span class="invisible ml-5 md:visible material-symbols-outlined">
+                    expand_more
+                </span>
+            </div>
+            <div class="flex items-center mt-1">
+                <div class="mr-3 flex align-middle">
+                    <p>Size</p><span class="material-symbols-outlined">
+                        arrow_right
+                    </span>
+                </div>
+                <div class="mr-3 flex align-middle">
+                    <p>Orientation</p><span class="material-symbols-outlined">
+                        arrow_right
+                    </span>
+                </div>
+                <div class="flex align-middle">
+                    <p>Metadata</p><span class="material-symbols-outlined">
+                        arrow_right
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="md:flex ml-auto gap-5">
+            <div class="invisible flex align-middle gap-2 md:visible">
+                <span class=" material-symbols-outlined">
+                    settings
+                </span>
+                <p>Advance settings</p>
+            </div>
+            <div class="flex align-middle gap-2 pr-5">
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                <p>Jannatul</p>
+            </div>
+        </div>
+    </nav>
+
+    <nav
+        class="h-12 bg-subNavColor text-textColor fixed top-52 left-0 w-screen flex items-center justify-start px-5 py-2 text-sm md:top-24">
+        <div class="flex align-middle gap-2 md:w-72">
+            <span class="material-symbols-outlined">
+                cloud_upload
+            </span>
+            <p>Import files..</p>
+        </div>
+        <div class="invisible lg:visible flex-1 flex justify-between items-center">
+            <div class="flex items-center justify-between gap-5 mr-10">
+                <div class="flex align-middle gap-2">
+                    <span class="material-symbols-outlined">
+                        publish
+                    </span>
+                    <p>Publish</p>
+                </div>
+                <div class="flex align-middle gap-2">
+                    <span class="material-symbols-outlined">
+                        download
+                    </span>
+                    <p>Download</p>
+                </div>
+                <div class="flex align-middle gap-2">
+                    <span class="material-symbols-outlined">
+                        device_hub
+                    </span>
+                    <p>Organize</p>
+                </div>
+                <div class="flex align-middle gap-2">
+                    <span class="material-symbols-outlined">
+                        arrow_right_alt
+                    </span>
+                    <p>Move</p>
+                </div>
+                <div class="flex align-middle gap-2">
+                    <span class="material-symbols-outlined">
+                        share
+                    </span>
+                    <p>Share</p>
+                </div>
+                <div class="flex align-middle gap-2">
+                    <span class="material-symbols-outlined">
+                        more_horiz
+                    </span>
+                    <p>More</p>
+                </div>
+            </div>
+            <div class="lg:flex-1 flex items-center justify-end">
+                <span class="material-symbols-outlined">
+                    check_box_outline_blank
+                </span>
+                <span class="material-symbols-outlined">
+                    grid_view
+                </span>
+                <span class="material-symbols-outlined">
+                    apps
+                </span>
+            </div>
+        </div>
+        <div class="flex align-middle gap-2 px-5 md:w-72 justify-end">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+            <p>Delete</p>
+        </div>
+    </nav>
+    <div class="invisible w-72 bg-subNavColor fixed top-36 left-0 h-screen lg:visible">
+        <div class="h-10 flex items-center bg-topNavColor">
+            <p class="h-7 mt-auto px-2 bg-subNavColor cla">Categories</p>
+            <p class="h-7 mt-auto px-2 cla">Library</p>
+            <p class="h-7 mt-auto px-2 cla">Agreements</p>
+        </div>
+        <div class="px-5">
+            <div class="flex items-start justify-between gap-5 mt-5">
+                <div class="flex align-middle gap-2">
+                    <span class="material-symbols-outlined">
+                        folder
+                    </span>
+                    <p>Categories</p>
+                </div>
+                <div class="flex align-middle gap-2">
+                    <span class="material-symbols-outlined">
+                        toggle_on
+                    </span>
+                    <p>Extend</p>
+                </div>
+            </div>
+            <div class="relative flex mt-5 items-center justify-between">
+                <input type="text" placeholder="Search Category" class="w-full py-2 bg-topNavColor rounded-full px-5">
+                <span
+                    class="absolute right-0 py-2 material-symbols-outlined px-3 border-s-2 border-s-grayColor bg-bodyColor rounded-e-full categorySearchIcon">
+                    search
+                </span>
+            </div>
+            <div class="mt-5">
+                <ul class="flex flex-col gap-2">
+                    <li class="flex align-middle gap-2">
+                        <span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>EmailGraphics
+                    </li>
+                    <li class="flex align-middle gap-2"><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>Internet
+                    </li>
+                    <li class="flex align-middle gap-2"><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>Landing Page
+                    </li>
+                    <li class="flex align-middle gap-2"><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>People
+                    </li>
+
+                    <li class="flex align-middle gap-2"><span class="absolute left-0 material-symbols-outlined">
+                            arrow_right
+                        </span><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>Peyton
+                    </li>
+
+                    <li class="flex align-middle gap-2"><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>Staff
+                    </li>
+                    <li class="flex align-middle gap-2"><span class="absolute left-0 material-symbols-outlined">
+                            arrow_right
+                        </span><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>Trips
+                    </li>
+                    <li class="flex align-middle gap-2"><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>User
+                    </li>
+                    <li class="flex align-middle gap-2"><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>Video
+                    </li>
+                    <li class="flex align-middle gap-2"><span class="absolute left-0 material-symbols-outlined">
+                            arrow_right
+                        </span><span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>Web
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <footer> 
+            <p>&copy; Jannat 2023</p>
+        </footer>
+    </div>
+    <div class="flex flex-col px-2 images">
+        <div class="flex flex-col gap-2">
+            <img src="./assets/img-1.jpeg" alt="">
+            <img src="./assets/img-11.jpeg" alt="">
+            <img src="./assets/img-3.jpeg" alt="">
+            <img src="./assets/img-6.jpeg" alt="">
+            <img src="./assets/img-4.jpeg" alt="">
+            <img src="./assets/img-5.jpeg" alt="">
+            <img src="./assets/img-7.jpeg" alt="">
+            <img src="./assets/img-10.jpeg" alt="">
+            <img src="./assets/img-11.jpeg" alt="">
+        </div>
+        <div class="flex flex-col gap-2">
+            <img src="./assets/img-10.jpeg" alt="">
+            <img src="./assets/img-5.jpeg" alt="">
+            <img src="./assets/img-7.jpeg" alt="">
+            <img src="./assets/img-11.jpeg" alt="">
+            <img src="./assets/img-5.jpeg" alt="">
+            <img src="./assets/img-4.jpeg" alt="">
+            <img src="./assets/img-3.jpeg" alt="">
+            <img src="./assets/img-2.jpeg" alt="">
+            <img src="./assets/img-1.jpeg" alt="">
+        </div>
+        <div class="flex flex-col gap-2">
+            <img src="./assets/img-2.jpeg" alt="">
+            <img src="./assets/img-3.jpeg" alt="">
+            <img src="./assets/img-4.jpeg" alt="">
+            <img src="./assets/img-5.jpeg" alt="">
+            <img src="./assets/img-10.jpeg" alt="">
+            <img src="./assets/img-1.jpeg" alt="">
+            <img src="./assets/img-6.jpeg" alt="">
+            <img src="./assets/img-7.jpeg" alt="">
+            <img src="./assets/img-2.jpeg" alt="">
+            <img src="./assets/img-1.jpeg" alt="">
+            <img src="./assets/img-11.jpeg" alt="">
+            <img src="./assets/img-6.jpeg" alt="">
+        </div>
+        <div class="flex flex-col gap-2">
+            <img src="./assets/img-1.jpeg" alt="">
+            <img src="./assets/img-10.jpeg" alt="">
+            <img src="./assets/img-7.jpeg" alt="">
+            <img src="./assets/img-1.jpeg" alt="">
+            <img src="./assets/img-11.jpeg" alt="">
+            <img src="./assets/img-6.jpeg" alt="">
+            <img src="./assets/img-3.jpeg" alt="">
+            <img src="./assets/img-5.jpeg" alt="">
+            <img src="./assets/img-4.jpeg" alt="">
+            <img src="./assets/img-2.jpeg" alt="">
+            <img src="./assets/img-10.jpeg" alt="">
+        </div>
+        <div class="flex flex-col gap-2">
+            <img src="./assets/img-3.jpeg" alt="">
+            <img src="./assets/img-2.jpeg" alt="">
+            <img src="./assets/img-1.jpeg" alt="">
+            <img src="./assets/img-6.jpeg" alt="">
+            <img src="./assets/img-4.jpeg" alt="">
+            <img src="./assets/img-5.jpeg" alt="">
+            <img src="./assets/img-11.jpeg" alt="">
+            <img src="./assets/img-7.jpeg" alt="">
+            <img src="./assets/img-10.jpeg" alt="">
+            <img src="./assets/img-1.jpeg" alt="">
+            <img src="./assets/img-11.jpeg" alt="">
+        </div>
+        <div class="flex flex-col gap-2">
+            <img src="./assets/img-11.jpeg" alt="">
+            <img src="./assets/img-5.jpeg" alt="">
+            <img src="./assets/img-10.jpeg" alt="">
+            <img src="./assets/img-4.jpeg" alt="">
+            <img src="./assets/img-7.jpeg" alt="">
+            <img src="./assets/img-6.jpeg" alt="">
+            <img src="./assets/img-2.jpeg" alt="">
+            <img src="./assets/img-5.jpeg" alt="">
+            <img src="./assets/img-4.jpeg" alt="">
+            <img src="./assets/img-3.jpeg" alt="">
+            <img src="./assets/img-1.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="invisible w-72 bg-subNavColor fixed top-36 right-0 h-screen lg:visible">
+        <div class="h-10 flex items-center bg-topNavColor">
+            <p class="h-7 mt-auto px-2 bg-subNavColor cla">Information</p>
+            <p class="h-7 mt-auto px-2 cla">Metadata</p>
+        </div>
+        <div class="px-5 py-2">
+            <img src="./assets/img-1.jpeg" alt="">
+        </div>
+        <div class="flex flex-col items-center justify-center gap-2">
+            <div>MQV-6249-A-Statue-In-Museum.jpg</div>
+            <div class="info">
+                <p class="tags">Id</p>
+                <p class="tags2">72493</p>
+                <p class="tags">Vault</p>
+                <p class="tags2">EmailGraphics</p>
+                <p class="tags">Date Uploaded</p>
+                <p class="tags2">16/05/23</p>
+                <p class="tags">Uploaded By</p>
+                <p class="tags2">Jannat</p>
+                <p class="tags">Categories</p>
+                <p class="tags2">Statue</p>
+                <p class="tags">File Extension</p>
+                <p class="tags2">jpg</p>
+                <p class="tags">File Size</p>
+                <p class="tags2">53.5kb</p>
+                <p class="tags">Width</p>
+                <p class="tags2">488</p>
+                <p class="tags">Height</p>
+                <p class="tags2">488</p>
+                <p class="tags">Area of Interest</p>
+                <p class="tags2">Yes</p>
+                <p class="tags">Tags</p>
+                <p class="tags2"></p>
+                <p class="tags">Description</p>
+                <p class="tags2"></p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <p>Published On</p>
+                <div class="flex align-middle gap-2">
+                    <p class="text-sm">View Publishes</p>
+                    <span class="material-symbols-outlined">
+                        link
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
